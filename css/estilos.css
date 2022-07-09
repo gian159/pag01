@@ -1,0 +1,407 @@
+/*Constantes*/
+.contenedor{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    margin: 0;
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+/*header*/
+header{
+    height: 200px;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 26px;
+}
+
+.sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+.buscar input{
+    margin-right: 5px;
+    border: 0px solid;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 16px;
+}
+
+.buscar button{
+    color: rgb(58, 57, 57);
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.login button{
+    color: rgb(58, 57, 57);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login a{
+    color: rgb(58, 57, 57);
+    text-decoration: none;
+    padding: 0 30px 0 100px;
+}
+
+.login :hover{
+    color: orange;
+    font-weight: bold;
+}
+
+.shop button{
+    color: rgb(58, 57, 57);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shop button:hover{
+    color: orange;
+}
+
+.shop a{
+    text-decoration: none;
+}
+
+.shop text{
+    color: white;
+    background-color: rgb(58, 57, 57);
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a{
+    color: rgb(58, 57, 57);
+    text-decoration: none;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu{
+    color: rgb(58, 57, 57);
+    border: 1px solid rgb(58, 57, 57);
+    padding: 3px 7px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+/*fix*/
+section .redes{
+    display: flex;
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    height: 10px;
+    flex-direction: column;
+}
+
+section .redes i{
+    font-size: 200%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+section .redes i:hover{
+    color: orange;
+}
+
+section .chat button{
+    display: flex;
+    position: fixed;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+    padding: 16px 50px;
+    right: 1%;
+    bottom: 8%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Brandon Grotesque', sans-serif;
+    cursor: pointer;
+}
+
+section .chat button i{
+    margin-right: 10px;
+}
+
+section .chat button:hover{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+/*Portada*/
+.portada div{
+    width: 100%;
+    padding: 0;
+}
+
+.portada div img{
+    width: 100%;
+}
+
+/*Publicaciones*/
+.publicaciones{
+    padding: 20px 0;
+    /*background-color: peru;*/
+}
+
+.publicaciones .contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.publicaciones h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.publicaciones .contenedor article{
+    width: calc(100% / 4 - 20px);
+    margin-bottom: 30px;
+}
+
+.publicaciones .contenedor article img{
+    width: 100%;
+    display: block;
+}
+
+.publicaciones .contenedor article div div{
+    display: flex;
+    justify-content: center;
+}
+
+.publicaciones .contenedor article div div span{
+    border: 2px solid rgb(99, 99, 99);
+    padding: 5px 120px;
+    cursor: pointer;
+}
+
+.publicaciones .contenedor article div div span:hover{
+    border: 2px solid orange;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.all{
+    background-color: black;
+    color: white;
+    padding: 12px 60px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.all:hover{
+    color: black;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer a{
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer a:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+footer .grupo2{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+footer .grupo2 i{
+    font-weight: bold;
+}
+
+footer .grupo2 i:hover{
+    color: orange;
+}
+
+footer h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .subs{
+    display: flex;
+    justify-content: center;
+}
+
+footer .subs input{
+    font-family: 'Brandon Grotesque Light', sans-serif;
+    margin-right: 10px;
+    width: 400px;
+}
+
+footer .subs button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Brandon Grotesque Light', sans-serif;
+    align-items: center;
+    padding: 10px;
+    width: 120px;
+}
+
+footer .subs button:hover{
+    color: black;
+    background-color: orange;
+    font-weight: bold;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*Diseño Responsive*/
+@media only screen and (max-width:900px){
+    .login a{
+        padding: 0 20px 0 40px;
+    }
+
+    .publicaciones .contenedor article div div span{
+        padding: 5px 40px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    /*Header*/
+    header ul{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin: 0 0 0 100px;
+    }
+
+    /*Publicaciones*/
+    .publicaciones .contenedor article{
+        width: calc(50% - 15px);
+    }
+
+    section .redes{
+        right: 3%;
+        top: 42%;
+    }
+
+    section .chat button{
+        right: 1%;
+        bottom: 2%;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+
+    .login a{
+        padding: 0 0 0 10px;
+    }
+
+    .publicaciones .contenedor article div div span{
+        padding: 5px 100px;
+    }
+
+    section .redes{
+        right: 3%;
+        top: 34%;
+    }
+
+    section .chat button{
+        right: 1%;
+        bottom: 2%;
+        padding: 10px 20px;
+    }
+    
+    /*Publicaciones*/
+    .publicaciones .contenedor article{
+        width: 100%;
+    }
+
+    /*footer*/
+    footer{
+        width: 100%;
+    }
+
+    footer a{
+        padding: 8px 8px;
+        margin: 2px;
+    }
+}
