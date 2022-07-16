@@ -109,13 +109,11 @@ header ul li a:hover{
     font-weight: bold;
 }
 
-.menu{
-    color: rgb(58, 57, 57);
-    border: 1px solid rgb(58, 57, 57);
-    padding: 3px 7px;
-    margin-right: 10px;
-    border-radius: 3px;
-    cursor: pointer;
+.icono-menu{
+    display: none;
+}
+
+.cont-menu{
     display: none;
 }
 
@@ -302,7 +300,7 @@ footer .subs{
 }
 
 footer .subs input{
-    font-family: 'Brandon Grotesque Light', sans-serif;
+    font-family: 'Brandon Grotesque', sans-serif;
     margin-right: 10px;
     width: 400px;
 }
@@ -312,7 +310,7 @@ footer .subs button{
     background-color: black;
     color: white;
     border: none;
-    font-family: 'Brandon Grotesque Light', sans-serif;
+    font-family: 'Brandon Grotesque', sans-serif;
     align-items: center;
     padding: 10px;
     width: 120px;
@@ -347,10 +345,72 @@ footer p{
         display: none;
     }
 
-    .menu{
+    /*Menu Box*/
+    .icono-menu{
         display: block;
         margin: 0 0 0 100px;
+        color: rgb(58, 57, 57);
+        border: 2px solid rgb(58, 57, 57);
+        padding: 3px 7px;
+        margin-right: 10px;
+        border-radius: 3px;
+        cursor: pointer;
     }
+
+    .icono-menu img{
+        margin-top: 5px;
+        width: 15px;
+    }
+
+    .icono-menu:hover{
+        background-color: orange;
+        border: 2px solid orange;
+    }
+
+    .cont-menu{
+        display: block;
+        background-color: rgba(255, 166, 0, 0.753);
+        width: 400px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease;
+    }
+
+    /*java*/
+    .active{
+        transform: translate(-600px);
+    }
+    
+    .opacity{
+        transition: all .5s ease;
+    }
+    
+    
+    .cont-menu ol{
+        padding: 100px 0 20px 0;
+        list-style: none;
+    }
+    
+    .cont-menu ol li{
+        display: block;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 10px 50px;
+        cursor: pointer;
+    }
+    
+    .cont-menu ol li:hover{
+        background-color: white;
+    }
+    
+    .cont-menu ol li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
 
     /*Publicaciones*/
     .publicaciones .contenedor article{
